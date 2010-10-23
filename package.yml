@@ -1,0 +1,22 @@
+name: "Form-Replacements"
+
+exports: "form-replacements.js"
+
+web: "[portfolio.bryanjswift.com](http://portfolio.bryanjswift.com)"
+
+description: "Creates styleable elements that function like standard form elements."
+
+license: "[MIT License](http://mootools.net/license.txt)"
+
+copyright: "&copy; [Bryan J Swift](http://portfolio.bryanjswift.com)"
+
+author: "bryanjswift"
+authors: "[Bryan J Swift](http://portfolio.bryanjswift.com)"
+
+sources:
+    - "Source/Form.Check.js"
+    - "Source/Form.CheckGroup.js"
+    - "Source/Form.Radio.js"
+    - "Source/Form.RadioGroup.js"
+    - "Source/Form.SelectOption.js"
+    - "Source/Form.Dropdown.js"
