@@ -24,7 +24,7 @@ Events, Options
 * excludedValues - (*array* defaults to empty array) values of options to be ignored when executing keyboard search of options
 * initialValue - (*string* defaults to null) value of the option selected by default
 * mouseLeaveDelay - (*number* defaults to 350) how long to wait before closing the dropdown after the mouse leaves it when open
-* selectOptions - (*object* defaults to {}) options to pass to Form.SelectOption when they are being created
+* selectOptions - (*object* defaults to empty object) options to pass to Form.SelectOption when they are being created
 * typeDelay - (*number* defaults to 500) how long to wait before the next keypress can be treated as 'not in sequence'
 
 ### Events:
