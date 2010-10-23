@@ -37,21 +37,28 @@ Form.Check = new Class({
       enable: this.enable.bind(this),
       highlight: this.highlight.bind(this),
       removeHighlight: this.removeHighlight.bind(this),
+      keyToggle: this.keyToggle.bind(this),
       toggle: this.toggle.bind(this)
     };
     var bound = this.bound;
     input = this.input = $(input);
     var id = input.get('id');
-    this.label = document.getElement('label[for=' + id);
+    this.label = document.getElement('label[for=' + id + ']');
     this.element = new Element('div', {
       'class': input.get('class') + ' ' + this.config.elementClass,
-      id: id ? id + 'Check': '',
+      id: id ? id + 'Check' : '',
       events: {
         click: bound.toggle,
         mouseenter: bound.highlight,
         mouseleave: bound.removeHighlight
       }
     });
+    this.input.addEvents({
+      keypress: bound.keyToggle,
+      keydown: bound.keyToggle,
+      keyup: bound.keyToggle
+    });
+    if (this.label) { this.label.addEvent('click', bound.toggle); }
     this.element.wraps(input);
     this.value = input.get('value');
     if (this.options.checked) { this.check(); } else { this.uncheck(); }
@@ -88,11 +95,24 @@ Form.Check = new Class({
     this.element.removeClass(this.config.highlightedClass);
     this.fireEvent('removeHighlight', this);
   },
+  keyToggle: function(e) {
+    var evt = new Event(e);
+    if (evt.key === 'space') { this.toggle(e); }
+  },
   toggle: function(e) {
     var evt;
     if (this.disabled) { return this; }
-    if (e) { evt = new Event(e).stop(); }
-    if (this.checked) { this.uncheck(); } else { this.check(); }
+    if (e) {
+      evt = new Event(e).stopPropagation();
+      if (evt.target.tagName.toLowerCase() !== 'a') {
+        evt.stop();
+      }
+    }
+    if (this.checked) {
+      this.uncheck();
+    } else {
+      this.check();
+    }
     this.fireEvent('change', this);
     return this;
   },
