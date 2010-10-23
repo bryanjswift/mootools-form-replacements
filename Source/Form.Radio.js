@@ -5,7 +5,7 @@ description: Class to represent a radio button
 authors: Bryan J Swift (@bryanjswift)
 license: MIT-style license.
 requires: [Core/Class.Extras, Core/Element, Core/Element.Event, Form-Replacement/Form.Check]
-provides: Form.Placeholder
+provides: Form.Radio
 ...
 */
 if (typeof window.Form === 'undefined') { window.Form = {}; }

@@ -5,7 +5,7 @@ description: Class to represent a group of Form.Check wrapped checkboxes
 authors: Bryan J Swift (@bryanjswift)
 license: MIT-style license.
 requires: [Core/Class.Extras, Core/Element, Core/Element.Event, Form-Replacement/Form.Check]
-provides: Form.Placeholder
+provides: Form.CheckGroup
 ...
 */
 if (typeof window.Form === 'undefined') { window.Form = {}; }
@@ -31,7 +31,7 @@ Form.CheckGroup = new Class({
     checkOptions.checked = initialValues ? initialValues.contains(checkbox.get('value')) : checkbox.get('checked');
     checkOptions.disabled = checkbox.get('disabled');
     checkbox.store('Form.CheckGroup::data',this);
-    var check = checkbox.retrieve('Form.Check::data') || new Form.Check(checkbox,$extend(checkOptions,this.options.checkOptions));
+    var check = checkbox.retrieve('Form.Check::data') || new Form.Check(checkbox, Object.append(checkOptions,this.options.checkOptions));
     this.checks.push(check);
   },
   checkAll: function() {

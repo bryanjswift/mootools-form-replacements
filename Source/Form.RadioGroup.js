@@ -5,7 +5,7 @@ description: Class to represent a group of Form.Radio buttons
 authors: Bryan J Swift (@bryanjswift)
 license: MIT-style license.
 requires: [Core/Class.Extras, Core/Element, Core/Element.Event, Form-Replacement/Form.Radio]
-provides: Form.Placeholder
+provides: Form.RadioGroup
 ...
 */
 if (typeof window.Form === 'undefined') { window.Form = {}; }

@@ -5,7 +5,7 @@ description: Class to represent a checkbox
 authors: Bryan J Swift (@bryanjswift)
 license: MIT-style license.
 requires: [Core/Class.Extras, Core/Element, Core/Element.Event]
-provides: Form.Placeholder
+provides: Form.Check
 ...
 */
 if (typeof window.Form === 'undefined') { window.Form = {}; }
