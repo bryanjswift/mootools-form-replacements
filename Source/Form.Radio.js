@@ -1,6 +1,6 @@
 /*
 ---
-name: Form.Check
+name: Form.Radio
 description: Class to represent a radio button
 authors: Bryan J Swift (@bryanjswift)
 license: MIT-style license.
