@@ -1,32 +1,34 @@
-/*extern Class, Event, Form */
-/*jslint bitwise: true, browser: true, eqeqeq: true, forin: true, immed: true, newcap: true, nomen: true, plusplus: true, regexp: true, undef: true*/
-
 /*
-Script: Form.Radio.js
-License: MIT-style license.
+---
+name: Form.Check
+description: Class to represent a radio button
+authors: Bryan J Swift (@bryanjswift)
+license: MIT-style license.
+requires: [Core/Class.Extras, Core/Element, Core/Element.Event, Form-Replacement/Form.Check]
+provides: Form.Placeholder
+...
 */
-
-if (typeof Form === 'undefined') { Form = {}; }
+if (typeof window.Form === 'undefined') { window.Form = {}; }
 
 Form.Radio = new Class({
-	Extends: Form.Check,
-	config: {
-		elementClass: 'radio',
-		storage: 'Form.Radio::data'
-	},
-	initialize: function(input,options) {
-		this.parent(input,options);
-	},
-	toggle: function(e) {
-		if (this.element.hasClass('checked') || this.disabled) { return; }
-		var evt;
-		if (e) { evt = new Event(e).stop(); }
-		if (this.checked) {
-			this.uncheck();
-		} else {
-			this.check();
-		}
-		this.fireEvent(this.checked ? 'onCheck' : 'onUncheck',this);
-		this.fireEvent('onChange',this);
-	}
+  Extends: Form.Check,
+  config: {
+    elementClass: 'radio',
+    storage: 'Form.Radio::data'
+  },
+  initialize: function(input,options) {
+    this.parent(input,options);
+  },
+  toggle: function(e) {
+    if (this.element.hasClass('checked') || this.disabled) { return; }
+    var evt;
+    if (e) { evt = new Event(e).stop(); }
+    if (this.checked) {
+      this.uncheck();
+    } else {
+      this.check();
+    }
+    this.fireEvent(this.checked ? 'onCheck' : 'onUncheck',this);
+    this.fireEvent('onChange',this);
+  }
 });
