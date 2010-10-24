@@ -1,4 +1,4 @@
-name: "Form Replacements"
+name: "Form-Replacements"
 exports: "form-replacements.js"
 web: "[portfolio.bryanjswift.com](http://portfolio.bryanjswift.com)"
 description: "Creates styleable elements that function like standard form elements."

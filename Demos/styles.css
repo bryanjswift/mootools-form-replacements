@@ -1,0 +1,51 @@
+#wrapper { position: relative; height: 100px; }
+.select {
+  position: absolute; bottom: 0; padding: 0; width: 98px; height: auto;
+  border-radius: 7px; -moz-border-radius: 7px;
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.66);
+  -moz-box-shadow: 0 0 4px rgba(0, 0, 0, 0.66);
+}
+.select:hover, .select.active {
+  -webkit-box-shadow: 0 0 7px rgba(0, 0, 0, 0.80);
+  -moz-box-shadow: 0 0 7px rgba(0, 0, 0, 0.80);
+}
+.select .list {
+  width: 100%; height: 0; overflow: hidden;
+  color: rgba(51, 51, 51, 0.5);
+  border-radius: 0px 0px 7px 7px; -moz-border-radius: 0px 0px 7px 7px;
+  font-size: 11px; -webkit-transition: height linear 0.25s;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e3e3e3));
+  background: -moz-linear-gradient(top left, #fff, #e3e3e3);
+}
+.select.active .list { height: 77px; }
+.select ul { margin: 0; padding: 0; list-style: none; }
+.select li { border-top: 1px solid rgba(169, 169, 169, 0.30); padding: 6px 10px; }
+.select li:first-child { border: 0; }
+.select li:last-child {
+  border-radius: 5px; border-top-right-radius: 0px; border-top-left-radius: 0px;
+  -moz-border-radius: 5px; -moz-border-top-right-radius: 0px; -moz-border-top-left-radius: 0px;
+}
+.select li:hover, .select li.highlighted {
+  color: rgba(51, 51, 51, 1.0); background: rgba(209, 209, 209, 0.60); cursor: pointer;
+}
+.select input { position: absolute; left: -9999999px; }
+.select select {
+  position: absolute; top: 4px; left: 0; height: 100%; width: 100%; opacity: 0.01;
+}
+.select .selection {
+  position: relative; padding: 7px 33px 0 10px; height: 19px; border-radius: 7px; -moz-border-radius: 7px;
+  font-size: 10px; font-weight: 700; text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, from(#526f88), to(#1c3c57));
+  background: -moz-linear-gradient(top left, #526f88, #1c3c57);
+}
+.select.active .selection {
+  border-bottom: 1px solid #939393; height: 18px; color: #333;
+  border-radius: 7px 7px 0px 0px; -moz-border-radius: 7px 7px 0px 0px; 
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#e3e3e3));
+  background: -moz-linear-gradient(top left, #fff, #e3e3e3);
+}
+.select .dropdownBackground {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  background: url(bg_dropdown_arrow.png) no-repeat right top;
+}
+.select.active .dropdownBackground { background-image: url(bg_dropdown_arrow_black.png); }
