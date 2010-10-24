@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div id="wrapper">
+  <select name="myselect" id="myselectId" class="myselectClass">
+    <option>1</option>
+    <option>2</option>
+    <option>3</option>
+  </select>
+</div>
+<script type="text/javascript">
+  document.body.onload = function() {
+    var dropdown = new Form.Dropdown(document.id('myselectId'));
+    dropdown.element.adopt(dropdown.element.getElement('.menu'));
+  };
+</script>
