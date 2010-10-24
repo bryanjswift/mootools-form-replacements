@@ -3,6 +3,13 @@
 Creates styleable elements that function like standard form elements complete with
 keyboard navigation and selection.
 
+## History
+
+The classes in this project started in [mootools-plugins](http://github.com/bryanjswift/mootools-plugins)
+but in order to get them submitted to the forge they needed to be broken up more logically.
+
+This repository breaks out just the Classes that represent styleable form elements.
+
 ## Build
 
 Build via [Packager][packager], requires [MooTools Core][core] to be registered to Packager already.
