@@ -1,5 +1,6 @@
 ---
 layout: default
+docs: true
 ---
 Class: Form.Check {#Form-Check}
 =================
@@ -16,7 +17,7 @@ Events, Options
 
 ### Arguments:
 
-1. element - (*mixed*) The id of a DOM element, a DOM element, or an Element
+1. element - (*mixed*) The id of a DOM element, a DOM element, or an [Element][Element]
 1. options - (*object*, optional) the configuration options for the styled check element
 
 ### Options:
@@ -136,5 +137,4 @@ Sets the checkbox to it's unchecked state
 
 
 
-[Element]: http://mootools.net/docs/Element/Element
-[typecheckbox]: #typecheckbox
+[Element]: http://mootools.net/docs/core/Element/Element

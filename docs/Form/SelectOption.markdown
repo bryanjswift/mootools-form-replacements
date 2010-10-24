@@ -1,5 +1,6 @@
 ---
 layout: default
+docs: true
 ---
 Class: Form.SelectOption {#Form.SelectOption}
 ========================
@@ -116,5 +117,4 @@ Sets the SelectOption to a selected state
 
 
 
-[Element]: http://mootools.net/docs/Element/Element
-[Form.SelectOption]: #Form.SelectOption
+[Element]: http://mootools.net/docs/core/Element/Element

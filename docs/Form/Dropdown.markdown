@@ -1,5 +1,6 @@
 ---
 layout: default
+docs: true
 ---
 Class: Form.Dropdown {#Form-Dropdown}
 ====================
@@ -16,7 +17,7 @@ Events, Options
 
 ### Arguments:
 
-1. select - (*mixed*) The id of a select element, a select element, or an Element
+1. select - (*mixed*) The id of a select element, a select element, or an [Element][Element]
 2. options - (*object*, optional) the configuration options for the styled dropdown element
 
 ### Options:
@@ -294,6 +295,5 @@ Form.Dropdown Method: toggle {#Form-Dropdown:toggle}
 
 
 
-[Element]: http://mootools.net/docs/Element/Element
-[Form.Dropdown]: #Form-Dropdown
-[Form.SelectOption]: /Form/Form.SelectOption
+[Element]: http://mootools.net/docs/core/Element/Element
+[Form.SelectOption]: {{ site.docbase }}docs/Form/SelectOption.html

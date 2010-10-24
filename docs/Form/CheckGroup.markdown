@@ -1,12 +1,13 @@
 ---
 layout: default
+docs: true
 ---
 Class: Form.CheckGroup {#Form-CheckGroup}
 =================
 
 Class to represent a group of checkboxes
 
-Creates or holds a group of Form.Check by looking for all input[type=checkbox] under the element passed to the constructor.
+Creates or holds a group of Form.Check by looking for all `input[type=checkbox]` under the element passed to the constructor.
 
 ### Syntax:
 
@@ -14,7 +15,7 @@ Creates or holds a group of Form.Check by looking for all input[type=checkbox] u
 
 ### Arguments:
 
-1. element - (*mixed*) The id of a DOM element, a DOM element, or an Element in which to look for checkbox inputs
+1. element - (*mixed*) The id of a DOM element, a DOM element, or an [Element][Element] in which to look for checkbox inputs
 1. options - (*object*, optional) the configuration options for the styled check element
 
 ### Options:
@@ -50,7 +51,7 @@ Adds a checkbox stored on the passed element or by creating one from it
 
 ### Arguments:
 
-1. checkbox - (*Element*) Element from which to retrieve the Form.Check object or from which to create a Form.CHeck
+1. checkbox - (*Element*) [Element][Element] from which to retrieve the Form.Check object or from which to create a Form.CHeck
 
 
 
@@ -98,7 +99,5 @@ Mark all Form.Check objects in this Form.CheckGroup as not checked
 
 
 
-[Element]: http://mootools.net/docs/Element/Element
-[Form.CheckGroup]: #Form.CheckGroup
-[Form.Check]: /Form/Form.Check
-[typecheckbox]: #typecheckbox
+[Element]: http://mootools.net/docs/core/Element/Element
+[Form.Check]: {{ site.docbase }}docs/Form/Check.html

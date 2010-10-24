@@ -1,5 +1,6 @@
 ---
 layout: default
+docs: true
 ---
 Class: Form.RadioGroup {#Form-RadioGroup}
 =================
@@ -14,7 +15,7 @@ Creates or holds a group of Form.Radio by looking for all `input[type=radio]` un
 
 ### Arguments:
 
-1. element - (*mixed*) The id of a DOM element, a DOM element, or an Element in which to look for checkbox inputs
+1. element - (*mixed*) The id of a DOM element, a DOM element, or an [Element][Element] in which to look for checkbox inputs
 1. options - (*object*, optional) the configuration options for the styled check element
 
 ### Options:
@@ -50,7 +51,7 @@ Adds a checkbox stored on the passed element or by creating one from it
 
 ### Arguments:
 
-1. radio - (*Element*) Element from which to retrieve the Form.Radio object or from which to create a Form.Radio
+1. radio - (*Element*) [Element][Element] from which to retrieve the Form.Radio object or from which to create a Form.Radio
 
 
 
@@ -92,6 +93,5 @@ Make the passed in Form.Radio the selected one
 
 
 
-[Element]: http://mootools.net/docs/Element/Element
-[Form.RadioGroup]: #Form.RadioGroup
-[Form.Radio]: /Form/Form.Radio
+[Element]: http://mootools.net/docs/core/Element/Element
+[Form.Radio]: {{ site.docbase }}docs/Form/Radio.html

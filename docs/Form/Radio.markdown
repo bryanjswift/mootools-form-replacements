@@ -1,5 +1,6 @@
 ---
 layout: default
+docs: true
 ---
 Class: Form.Radio {#Form-Radio}
 =================
@@ -16,7 +17,7 @@ Class to represent a radio button
 
 ### Arguments:
 
-1. element - (*mixed*) The id of a DOM element, a DOM element, or an Element
+1. element - (*mixed*) The id of a DOM element, a DOM element, or an [Element][Element]
 1. options - (*object*, optional) the configuration options for the styled check element
 
 ### Configuration:
@@ -40,6 +41,5 @@ Can only be changed by altering source or subclassing.
 
 
 
-[Element]: http://mootools.net/docs/Element/Element
-[Form.Check]: /Form/Form.Check
-[typecheckbox]: #typecheckbox
+[Element]: http://mootools.net/docs/core/Element/Element
+[Form.Check]: {{ site.docbase }}docs/Form/Check.html

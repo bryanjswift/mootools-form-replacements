@@ -15,6 +15,14 @@
     </header>
     <div id="container">
       {{ content }}
+      {% if page.docs %}
+        <nav>
+          <h2>Documentation</h2>
+          <ul>
+            {% include docs-list.html %}
+          </ul>
+        </nav>
+      {% endif %}
     </div>
     <footer>
       <p>
