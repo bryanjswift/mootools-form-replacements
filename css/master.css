@@ -1,13 +1,16 @@
-body { margin-top: 1.0em; background-color: #F4F5F5; font-family: "Helvetica,Arial,FreeSans"; color: #000000; }
-#container { margin: 0 auto; width: 700px; }
-h1 { font-size: 3.8em; color: #0b0a0a; margin-bottom: 3px; }
-h1 .small { font-size: 0.4em; }
+body, h1, h2, h3, h4, p, ul, li { margin: 0; border: 0; padding: 0; }
+header, footer, section { display: block; }
+body { margin: 1.0em; font-family: Helvetica, Arial, FreeSans; color: #000000; background: #F4F5F5; line-height: 1; }
+h1 { margin: 0.5em 0; font-size: 2em; color: #0b0a0a; }
 h1 a { text-decoration: none }
-h2 { font-size: 1.5em; color: #0b0a0a; }
-h3 { text-align: center; color: #0b0a0a; }
+h1 + p { margin: 0.5em 0; }
+h2 { margin: 0.5em 0; font-size: 1.5em; color: #0b0a0a; }
+h3 { margin: 0.5em 0; color: #0b0a0a; }
 a { color: #0b0a0a; }
-.description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-.download { float: right; }
-pre { background: #000; color: #fff; padding: 15px;}
-hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-.footer { text-align:center; padding-top:30px; font-style: italic; }
+ul { list-style: none; }
+li { margin: 0.5em 1em; }
+p { margin: 0.5em 1em; }
+pre { margin: 1em; color: #555; }
+header h1 { font-size: 3.8em; }
+footer { margin: 2em 0 0; font-size: 0.9em; }
+footer p { margin: 0.5em 0; }
