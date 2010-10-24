@@ -14,5 +14,6 @@ pre { margin: 1em; color: #555; }
 header h1 { font-size: 3.8em; }
 #container { position: relative; padding: 0 25% 0 0; }
 nav { position: fixed; top: 6.8em; right: 0; width: 25%; }
+.index nav { position: static; }
 footer { margin: 2em 0 0; font-size: 0.9em; }
 footer p { margin: 0.5em 0; }
