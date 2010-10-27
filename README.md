@@ -3,6 +3,8 @@
 Creates styleable elements that function like standard form elements complete with
 keyboard navigation and selection.
 
+![Screenshot](http://static.bryanjswift.com/mootools/form-replacements/mootools-form-replacements-screenshot.png)
+
 ## History
 
 The classes in this project started in [mootools-plugins](http://github.com/bryanjswift/mootools-plugins)
