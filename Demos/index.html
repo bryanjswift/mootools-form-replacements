@@ -9,7 +9,7 @@ layout: default
   </select>
 </div>
 <script type="text/javascript">
-  document.body.onload = function() {
+  window.onload = function() {
     var dropdown = new Form.Dropdown(document.id('myselectId'));
     dropdown.element.adopt(dropdown.element.getElement('.menu'));
   };
