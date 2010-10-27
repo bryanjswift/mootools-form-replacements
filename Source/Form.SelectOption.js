@@ -29,7 +29,7 @@ Form.SelectOption = new Class({
   value: null,
   initialize: function(option, options) {
     this.setOptions(options);
-    option = $(option);
+    option = document.id(option);
     this.option = option;
     this.bound = {
       deselect: this.deselect.bind(this),

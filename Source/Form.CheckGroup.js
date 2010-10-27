@@ -20,7 +20,7 @@ Form.CheckGroup = new Class({
   initialize: function(group,options) {
     if (!Form.Check) { throw 'required Class Form.Check not found'; }
     this.setOptions(options);
-    group = $(group);
+    group = document.id(group);
     if (!group) { return this; }
     var checkboxes = group.getElements('input[type=checkbox]');
     checkboxes.each(this.addCheck,this);

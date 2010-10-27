@@ -23,7 +23,7 @@ Form.RadioGroup = new Class({
     if (!Form.Radio) { throw 'required Class Form.Radio not found'; }
     this.setOptions(options);
     this.bound = { select: this.select.bind(this) };
-    group = $(group);
+    group = document.id(group);
     if (!group) { return this; }
     var radios = group.getElements('input[type=radio]');
     radios.each(this.addCheck,this);

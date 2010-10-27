@@ -55,7 +55,7 @@ Form.Dropdown = new Class({
     this.element.replaces(select);
     document.addEvent('click', this.bound.collapse);
     var eventName = Browser.Engine.trident || Browser.Engine.webkit ? 'keydown' : 'keypress';
-    var target = Browser.Engine.trident ? $(document.body) : window;
+    var target = Browser.Engine.trident ? document.id(document.body) : window;
     target.addEvent('keydown',this.bound.keydown).addEvent(eventName,this.bound.keypress);
   },
   initializeCreateElements: function(select) {

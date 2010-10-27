@@ -41,7 +41,7 @@ Form.Check = new Class({
       toggle: this.toggle.bind(this)
     };
     var bound = this.bound;
-    input = this.input = $(input);
+    input = this.input = document.id(input);
     var id = input.get('id');
     this.label = document.getElement('label[for=' + id + ']');
     this.element = new Element('div', {
